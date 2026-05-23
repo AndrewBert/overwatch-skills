@@ -1,21 +1,22 @@
 ---
-name: overwatch-hero-pick
+name: overwatch-5v5-hero-pick
 description: >-
-  Recommends which Overwatch hero to play, based on the current map, the enemy
-  team composition, and (optionally) the user's personal hero pool. Use this
-  skill whenever the user asks what hero to pick, who to play, who counters a
-  specific enemy hero, whether dive/brawl/poke is good on a given map, what to
-  swap to mid-match, or describes any Overwatch match situation and wants a
-  pick suggestion. Trigger it for casual phrasings too — "what should I play on
+  Recommends which Overwatch hero to play in 5v5 Role Queue Competitive, based
+  on the current map and the enemy team composition. Use this skill whenever
+  the user asks what hero to pick, who to play, who counters a specific enemy
+  hero, whether dive/brawl/poke is good on a given map, what to swap to
+  mid-match, or describes any Overwatch match situation and wants a pick
+  suggestion. Trigger it for casual phrasings too — "what should I play on
   King's Row", "who counters Pharah", "their team has a Winston and a Tracer,
   help", "is my pick good here", "what do I swap to", "any tips for this map" —
   and for any Overwatch hero-selection question even if the user does not
   explicitly say the word "recommend". Do NOT use this skill for non-Overwatch
-  games, or for Overwatch lore, news, or patch-history questions that are not
-  about choosing a hero.
+  games, for Stadium or 6v6 Open Queue (different ability/role logic), or for
+  Overwatch lore, news, or patch-history questions that are not about choosing
+  a hero.
 ---
 
-# Overwatch Hero Pick
+# Overwatch 5v5 Hero Pick
 
 Recommend a hero to play in **5v5 Role Queue Competitive**. This skill does
 NOT cover Stadium (separate mode with its own ability customization via
@@ -25,12 +26,10 @@ balance). If the user asks about either of those modes, say so up front.
 Inputs arrive in stages and are often incomplete — work with whatever the
 user gives, and never block on missing information.
 
-The three inputs, in priority order:
+The two inputs, in priority order:
 1. **Map** — narrows the archetype (Dive / Brawl / Poke / Flex).
 2. **Enemy composition** — drives counter-picking. Often partial ("their tank
    is Winston") — that's fine, partial info still produces a useful answer.
-3. **Personal hero pool** — `references/hero-pool.md`. Filters recommendations
-   to heroes the user actually plays. Optional; see Step 4.
 
 All game data lives in `references/knowledge-base.md`. Read it whenever this
 skill triggers — it holds the roster, the map archetype table, the counter
@@ -93,21 +92,7 @@ Pick the hero that counters the most of what's hurting the user, while still
 being reasonable on the map. Briefly say *why* it counters (the mechanic —
 e.g. "Zarya's beam ignores D.Va's Defense Matrix").
 
-## Step 4 — Apply the personal pool
-
-Read `references/hero-pool.md`.
-
-- If it still contains the placeholder text ("STATUS: PLACEHOLDER"), skip the
-  personalized track. Give the objective recommendation only, and add one line
-  noting that filling in the hero pool would let the skill also suggest from
-  heroes they actually play.
-- If a real pool is present, produce **two tracks**: the objective best pick,
-  and the best pick from within their pool (respect comfort ratings — a
-  comfort-2 hero is a stretch, a comfort-4/5 is reliable). When the objective
-  pick is outside their pool, still show it, and frame it as a hero worth
-  learning to close a gap.
-
-## Step 5 — Ban awareness
+## Step 4 — Ban awareness
 
 Competitive removes up to 4 heroes per match, and 5–6 strong heroes are
 routinely targeted (see the knowledge base). So always give a **primary pick
@@ -125,7 +110,6 @@ Enemy read: <the 1–2 things that actually matter>
 
 Primary: <hero> — <one-line why>
 Fallback (if banned): <hero> — <one-line why>
-[Your pool: <hero from their pool> — <one-line why>]   ← only if pool is filled
 
 Note: <freshness / volatility caveat, only if relevant>
 ```

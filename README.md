@@ -1,4 +1,4 @@
-# Overwatch Hero Pick — a Claude Code skill
+# Overwatch 5v5 Hero Pick — a Claude Code skill
 
 A [Claude Code](https://claude.com/claude-code) skill that recommends what hero to play in **Overwatch 2 — 5v5 Role Queue Competitive**, based on the map, the enemy team composition, and (optionally) your personal hero pool.
 
@@ -11,23 +11,19 @@ Ask things like:
 
 The skill reads a curated knowledge base (`references/knowledge-base.md`) — roster, map archetypes, counter matrix, current tier list, sub-role passives, and the Hero Bans pool — and gives you a primary pick plus a fallback that survives bans.
 
-**Scope:** 5v5 Role Queue Competitive only. Does **not** cover Stadium (separate mode, Stadium Powers change ability logic) or 6v6 Open Queue (different role balance).
+**Scope:** 5v5 Role Queue Competitive only. Does **not** cover Stadium (separate mode, Stadium Powers change ability logic) or 6v6 Open Queue (different role balance). The name reflects this — it's a 5v5 skill, on purpose.
 
 ## Install
 
 This is a Claude Code skill. To use it:
 
 1. Clone (or download) this repo.
-2. Drop the `overwatch-hero-pick/` folder into your Claude Code skills directory:
-   - **macOS / Linux:** `~/.claude/skills/overwatch-hero-pick/`
-   - **Windows:** `%USERPROFILE%\.claude\skills\overwatch-hero-pick\`
-3. Restart Claude Code (or open a new session). The skill will trigger automatically when you ask Overwatch hero-pick questions, or you can invoke it explicitly with `/overwatch-hero-pick`.
+2. Drop the `overwatch-5v5-hero-pick/` folder into your Claude Code skills directory:
+   - **macOS / Linux:** `~/.claude/skills/overwatch-5v5-hero-pick/`
+   - **Windows:** `%USERPROFILE%\.claude\skills\overwatch-5v5-hero-pick\`
+3. Restart Claude Code (or open a new session). The skill will trigger automatically when you ask Overwatch hero-pick questions, or you can invoke it explicitly with `/overwatch-5v5-hero-pick`.
 
-That's it — the skill is self-contained (one `SKILL.md` + two reference files).
-
-### Optional: personalize with your hero pool
-
-By default, the skill gives objective recommendations. To get a second track tailored to heroes you actually play, edit `references/hero-pool.md` and replace the placeholder with your pool + comfort ratings (1 = occasional, 5 = main). Example is in that file.
+That's it — the skill is self-contained (one `SKILL.md` + one reference file).
 
 ## Freshness
 
