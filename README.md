@@ -1,48 +1,26 @@
-# Overwatch 5v5 Hero Pick — a Claude Code skill
+# Overwatch Skills
 
-A [Claude Code](https://claude.com/claude-code) skill that recommends what hero to play in **Overwatch 2 — 5v5 Role Queue Competitive**, based on the map, the enemy team composition, and (optionally) your personal hero pool.
+A collection of [Claude Code](https://claude.com/claude-code) skills for Overwatch 2.
 
-Ask things like:
+## Skills
 
-- "What should I play on King's Row?"
-- "Their tank is Winston and they have a Tracer wrecking us — help"
-- "Who counters Pharah?"
-- "Is my pick good here, or should I swap?"
+- **[overwatch-5v5-hero-pick](overwatch-5v5-hero-pick/)** — Recommends hero picks in **5v5 Role Queue Competitive** based on the current map and enemy team composition. Gives you a primary pick plus a fallback that survives bans.
 
-The skill reads a curated knowledge base (`references/knowledge-base.md`) — roster, map archetypes, counter matrix, current tier list, sub-role passives, and the Hero Bans pool — and gives you a primary pick plus a fallback that survives bans.
-
-**Scope:** 5v5 Role Queue Competitive only. Does **not** cover Stadium (separate mode, Stadium Powers change ability logic) or 6v6 Open Queue (different role balance). The name reflects this — it's a 5v5 skill, on purpose.
+More skills planned.
 
 ## Install
 
-This is a Claude Code skill. To use it:
+Each skill lives in its own subdirectory. To install one, drop that subdirectory into your Claude Code skills folder:
 
-1. Clone (or download) this repo.
-2. Drop the `overwatch-5v5-hero-pick/` folder into your Claude Code skills directory:
-   - **macOS / Linux:** `~/.claude/skills/overwatch-5v5-hero-pick/`
-   - **Windows:** `%USERPROFILE%\.claude\skills\overwatch-5v5-hero-pick\`
-3. Restart Claude Code (or open a new session). The skill will trigger automatically when you ask Overwatch hero-pick questions, or you can invoke it explicitly with `/overwatch-5v5-hero-pick`.
+- **macOS / Linux:** `~/.claude/skills/<skill-name>/`
+- **Windows:** `%USERPROFILE%\.claude\skills\<skill-name>\`
 
-That's it — the skill is self-contained (one `SKILL.md` + one reference file).
-
-## Freshness
-
-The knowledge base has a **"Valid as of"** date and a **"Last balance patch reflected"** date at the top. Overwatch balance shifts every patch and the meta turns over fast — if the KB is more than ~3 weeks stale, the skill will pull recent patch notes itself and warn you.
-
-If you notice the KB is behind a recent patch, please open an issue or a PR (see below).
+See each skill's own README for skill-specific notes and scope.
 
 ## Contributing
 
-PRs are welcome — especially patch-note updates, counter-matrix corrections, and tier shifts after a balance update.
-
-**Hard rules of evidence — please read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a PR.** The short version:
-
-- ✅ Source from **official Blizzard sources only** — `overwatch.blizzard.com` hero pages and patch notes.
-- ❌ **Do not use the Fandom wiki** as evidence. It is frequently months behind on reworks.
-- ❌ **Do not use Stadium Powers** as evidence of a base ability's current state. Stadium is a separate mode with its own ability customization.
-
-Open issues for: bugs in the skill logic, missing heroes, missing maps, suggestions for new sections.
+PRs are welcome — especially patch-note updates and corrections. See [CONTRIBUTING.md](CONTRIBUTING.md) for the rules of evidence (Blizzard-official sources only; no Fandom, no Stadium Powers).
 
 ## License
 
-[MIT](LICENSE) — do what you want, no warranty.
+[MIT](LICENSE) — fan-made, not affiliated with or endorsed by Blizzard Entertainment.
