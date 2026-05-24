@@ -1,0 +1,32 @@
+name: Release skill ZIPs
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build skill ZIPs
+        run: ./scripts/build-skills.sh
+
+      - name: Publish rolling latest release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Rolling latest
+          prerelease: true
+          files: dist/*.zip
+          body: |
+            Auto-built from the latest commit on `main`.
+
+            Download a skill ZIP and upload it to claude.ai
+            (Settings → Customize → Skills → "+ Create skill" → "Upload a skill"),
+            or unzip into your agent's skills directory.
