@@ -8,6 +8,22 @@ A collection of [Agent Skills](https://agentskills.io) for Overwatch 2 — works
 
 More skills planned.
 
+## Download (no terminal needed)
+
+Direct ZIP download for **claude.ai web** and anyone who doesn't want to touch a terminal:
+
+- **[overwatch-5v5-hero-pick.zip](https://github.com/AndrewBert/overwatch-skills/releases/download/latest/overwatch-5v5-hero-pick.zip)** — always the latest build
+
+### Upload to claude.ai
+
+1. Open **Settings → Customize → Skills**.
+2. Click **+ Create skill → Upload a skill**.
+3. Select the ZIP. Done.
+
+### Other agents (Claude Code, Cursor, Codex, etc.)
+
+Unzip and drop the `overwatch-5v5-hero-pick/` folder into your agent's skills directory (see [Manual install](#manual-install-no-npx) below for paths). Or just use `npx skills add` — it's faster.
+
 ## Install
 
 Install with the [`skills` CLI](https://github.com/vercel-labs/skills) (works across all supported agents):

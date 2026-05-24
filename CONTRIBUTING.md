@@ -32,3 +32,7 @@ Third-party stat sites (Overbuff, owherostats, etc.) are OK as supporting signal
 - Use exact ability names from the Blizzard hero page (capitalization included).
 
 Be patient on review — this is a hobby project.
+
+## Building skill ZIPs locally
+
+CI builds the downloadable ZIPs automatically on every push to `main`. To smoke-test a ZIP before pushing, run `./scripts/build-skills.sh` — it writes per-skill ZIPs to `dist/` using the same script CI runs. Don't use Finder's "Compress" on macOS; it injects `__MACOSX/` metadata that breaks claude.ai's uploader.
