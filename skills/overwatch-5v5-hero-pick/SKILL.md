@@ -1,19 +1,13 @@
 ---
 name: overwatch-5v5-hero-pick
 description: >-
-  Recommends which Overwatch hero to play in 5v5 Role Queue Competitive, based
-  on the current map and the enemy team composition. Use this skill whenever
-  the user asks what hero to pick, who to play, who counters a specific enemy
-  hero, whether dive/brawl/poke is good on a given map, what to swap to
-  mid-match, or describes any Overwatch match situation and wants a pick
-  suggestion. Trigger it for casual phrasings too — "what should I play on
-  King's Row", "who counters Pharah", "their team has a Winston and a Tracer,
-  help", "is my pick good here", "what do I swap to", "any tips for this map" —
-  and for any Overwatch hero-selection question even if the user does not
-  explicitly say the word "recommend". Do NOT use this skill for non-Overwatch
-  games, for Stadium or 6v6 Open Queue (different ability/role logic), or for
-  Overwatch lore, news, or patch-history questions that are not about choosing
-  a hero.
+  Recommends which Overwatch hero to play in 5v5 Role Queue Competitive based
+  on the current map and enemy team composition. Use whenever the user asks
+  what hero to pick, who counters a specific enemy hero, what archetype fits a
+  map (Dive/Brawl/Poke/Flex), or what to swap to mid-match. Trigger on casual
+  phrasings too — "what should I play on King's Row", "who counters Pharah",
+  "their team has a Winston, help". Do NOT use for Stadium, 6v6 Open Queue, or
+  Overwatch lore/news/patch-history questions unrelated to picking a hero.
 ---
 
 # Overwatch 5v5 Hero Pick
