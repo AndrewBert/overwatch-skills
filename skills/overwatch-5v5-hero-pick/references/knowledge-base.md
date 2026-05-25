@@ -119,13 +119,14 @@ Indexed by *enemy* hero, since the common query is "they have X, what do I pick.
   Reinhardt (Charge pins through Matrix), Illari at range; soft: Sojourn burst (Railgun secondary punches through Matrix windows).
 - **Domina** → D.Va and Reinhardt (aggressive heroes close the gap),
   Hazard at melee, Sombra (EMP destroys Barrier Array; hack locks out redeploy for ~1s).
-  (Extended Power and Power Move both shift this — see §8.)
+  (Extended Power, Disruptive Detonation, and Power Move all shift this — see §8.)
 - **Sigma** → Baptiste (Amp Matrix doubles damage through barrier), Mei (Ice Wall),
   Vendetta if she reaches him.
 - **Reinhardt** → Pharah/Echo (out of range), Sombra (hack locks barrier deploy for ~1s; EMP destroys it),
   Bastion/Junkrat (shield melt).
 - **Winston** → Reaper, Mei, Brigitte, Symmetra (short-range DPS chews him and his bubble at point-blank).
 - **Zarya** → Hanzo, Widowmaker (out of beam range), Cassidy (Flashbang Hinder up close), Ana (Sleep Dart shuts down Grav follow-up; anti-nade denies healing during her dives — note: anti-nade does NOT block her energy gain).
+  (Cassidy's Bang Bang adds a second Flashbang at longer range — see §8.)
 - **Ramattra** → Reaper, Roadhog (tankbusters), Tracer/Pharah/Genji (kite the melee).
   (Nanite Repair softens the tankbust counter — see §8.)
 - **Junker Queen** → Ana (anti-nade strips her Wound sustain).
