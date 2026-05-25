@@ -164,6 +164,19 @@ Indexed by *enemy* hero, since the common query is "they have X, what do I pick.
   (Mei's Deep Freeze upgrades the slow into a hard freeze — see §8.)
 - **Echo** → hitscan (Soldier, Ashe, Cassidy, Sierra), Sombra (hack mid-flight).
 - **Hanzo / Soldier: 76 / Cassidy / Ashe** → dive pressure forces them off angles.
+- **Freja** → hitscan: Soldier, Cassidy, Ashe, Widowmaker, Sierra, Baptiste
+  (her Updraft window has no defensive ability and no self-heal in base
+  kit). Genji deflect on Bola Shot and Take Aim (both projectile). D.Va
+  Defense Matrix eats both. Ana (Sleep — no cleanse, no invuln in base
+  kit). Ground-side dive (Tracer/Sombra) since she has no peel.
+  (Aerial Recovery adds self-heal during Updraft — see §8.)
+- **Venture** → Ana (Sleep on emerge — Burrow grants brief invuln, so time
+  the Sleep just after they pop), Sombra (hack post-Burrow), Mei (slow
+  prevents Drill Dash escape; primary spray isn't deflectable), Brigitte /
+  Reinhardt at melee (no self-heal or barrier in base kit), D.Va Defense
+  Matrix on SMART Excavator (projectile). Hitscan punishes between Burrow
+  windows.
+  (SMART Extender doubles SMART Excavator range — see §8.)
 
 ### Enemy supports
 - **Kiriko** → burst tracking (Sojourn, Soldier, Tracer); Sombra (hack stops Suzu).
@@ -323,6 +336,14 @@ the hero page if anything looks off.
 - **Widowmaker — Seeker Mine** (Major): "Venom Mine now fires poison darts
   at enemies within 10 meters and remains active after triggered." → adds
   active anti-flank to her "Genji/Tracer/Sombra dive, Vendetta flank" row.
+- **Freja — Aerial Recovery** (Major): "After using Updraft, heal for 30
+  health per second until Freja touches the ground." → adds self-heal
+  during the exact window the hitscan counter exploits; weakens "Freja →
+  hitscan" significantly.
+- **Venture — SMART Extender** (Major): "Empower SMART Excavator with E to
+  increase its maximum projectile range by 100%." → doubles their primary
+  reach, pushing the "hitscan punishes between Burrow windows" calculus
+  back at the hitscan duelists.
 
 ### Support perks that shift matchups
 - **Ana — Biotic Bounce** (Major): "After exploding, Biotic Grenade bounces
